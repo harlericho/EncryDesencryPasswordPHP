@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="dist/style.css" rel="stylesheet">
+    <link rel="icon" href="dist/icons.ico" type="image/png" />
+
+    <title>Encriptación - Desencriptación</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="col-md-8 mt-5">
+                <h1 style="color: azure;"><img src="dist/code.ico" width="30" height="30"> Encriptación -
+                    Desencriptación</h1>
+                <form method="POST">
+                    <fieldset enabled>
+                        <legend style="color: azure;"><img src="dist/text.ico" width="30" height="30"> <strong> Ingrese una clave
+                            para la encriptación </strong>
+                        </legend>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label" style="color: azure;">Texto o
+                                clave:</label>
+                            <input type="text" id="txtTexto" name="txtTexto" class="form-control"
+                                placeholder="Texto o clave" autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledSelect" class="form-label" style="color: azure;">Texto o clave
+                                encriptada:</label>
+                            <input type="text" id="txtEncry" name="txtEncry" class="form-control" placeholder="**************"
+                                disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledSelect" class="form-label" style="color: azure;">Texto o clave
+                                desencriptada:</label>
+                            <input type="text" id="txtDesencry" name="txtDesencry" class="form-control" placeholder="*************"
+                                disabled>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btnGenerar" name="btnGenerar"><i class="fas fa-shield-alt"></i> Generar</button>
+                        <button type="submit" class="btn btn-dark" id="btnLimpiar" name="btnLimpiar"><i class="fab fa-digital-ocean"></i> Limpiar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <center>
+            <p class="mt-5 mb-3 text-muted">© 2020-2021</p>
+            <div class="copyright" style="color:blanchedalmond;">
+                &copy; Copyright <strong><span>CarlosChocaSánchez</span></strong>
+                <a href="https://carlchoksanc.ml" style="color: bisque;">CarlChokSanc</a>
+            </div>
+        </center>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"
+        integrity="sha512-efUTj3HdSPwWJ9gjfGR71X9cvsrthIA78/Fvd/IN+fttQVy7XWkOAXb295j8B3cmm/kFKVxjiNYzKw9IQJHIuQ=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
